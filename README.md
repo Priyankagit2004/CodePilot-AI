@@ -2,7 +2,7 @@
 
 CodePilot AI is an enterprise repository-intelligence platform. Upload a source repository to map its structure, index it for semantic retrieval, explore engineering health metrics, and ask grounded questions through Gemini-powered specialist agents.
 
-![CodePilot AI dashboard placeholder](docs/assets/screenshots/dashboard.png)
+![CodePilot AI dashboard placeholder](docs/assets/screenshots/dashboard.png.png)
 
 ## What it does
 
