@@ -1,0 +1,35 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Tooling and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Infrastructure state
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Generated repository data
+apps/api/data/

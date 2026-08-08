@@ -1,0 +1,5 @@
+import { Bot, FolderGit2, LayoutDashboard, MessageSquare, Upload } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
+import { cn } from '../../lib/utils'
+const navigation = [['Dashboard', '/dashboard', LayoutDashboard], ['Repository Upload', '/repositories/upload', Upload], ['Repositories', '/repositories', FolderGit2], ['AI Chat', '/chat', MessageSquare]] as const
+export function Sidebar() { return <aside className="hidden w-64 shrink-0 border-r border-[#30363d] bg-[#0d1117] lg:block"><div className="flex h-16 items-center gap-2 border-b border-[#30363d] px-5"><div className="grid size-7 place-items-center rounded bg-blue-500"><Bot className="size-4" /></div><span className="font-semibold">CodePilot AI</span></div><nav className="space-y-1 p-3">{navigation.map(([label, to, Icon]) => <NavLink key={to} to={to} className={({ isActive }) => cn('flex items-center gap-3 rounded-md px-3 py-2 text-sm text-slate-400 transition hover:bg-[#161b22] hover:text-slate-100', isActive && 'bg-[#21262d] text-white')}><Icon className="size-4" />{label}</NavLink>)}</nav></aside> }
